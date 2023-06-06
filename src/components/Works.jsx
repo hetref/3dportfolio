@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github, live } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -11,14 +11,14 @@ const ProjectCard = ({
   description,
   tags,
   image,
-  source_code_link,
+  source_live_link,
 }) => {
   return (
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
       className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
     >
-      <div className="relative w-full h-[230px]">
+      <div className="relative w-full h-[200px]">
         <img
           src={image}
           alt="project_image"
@@ -27,11 +27,11 @@ const ProjectCard = ({
 
         <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
           <div
-            onClick={() => window.open(source_code_link, "_blank")}
-            className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            onClick={() => window.open(source_live_link, "_blank")}
+            className="black-gradient w-14 h-14 rounded-full flex justify-center items-center cursor-pointer"
           >
             <img
-              src={github}
+              src={live}
               alt="source code"
               className="w-1/2 h-1/2 object-contain"
             />
@@ -60,7 +60,9 @@ const Works = () => {
     <div id="works">
       <div className="h-[80px]" />
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My Work</p>
+        <p className={styles.sectionSubText}>
+          What I've created throughout the journey?
+        </p>
         <h2 className={styles.sectionHeadText}>Projects</h2>
       </motion.div>
       <div className="w-full flex">
@@ -68,11 +70,11 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          I'm a skilled software developer with experience in TypeScript and
-          JavaScript, and expertise in frameworks like React, Node.js, and
-          Three.js. I'm a quick learner and collaborate closely with clients to
-          create efficient, scalable, and user-friendly solutions that solve
-          real-world problems. Let's work together to bring your ideas to life!
+          I'm a skilled Full stack Web Developer with experience in JavaScript,
+          and expertise in frameworks like React, Node.js, and Three.js. I'm a
+          good team player and collaborate closely with clients to create
+          efficient, scalable, and user-friendly solutions that solve real-world
+          problems. Let's join together to bring the ideas to life!
         </motion.p>
       </div>
 

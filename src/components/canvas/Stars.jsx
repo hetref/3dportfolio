@@ -1,4 +1,4 @@
-import { useState, useRef, Suspense } from "react";
+import { useState, useRef, Suspense, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
@@ -30,15 +30,24 @@ const Stars = (props) => {
 };
 
 const StarsCanvas = () => {
+  const [loadingStatus, setLoadingStatus] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoadingStatus(true);
+    }, 2000);
+  });
   return (
     <div className="w-full h-auto absolute inset-0 z-[-1]">
-      <Canvas camera={{ position: [0, 0, 1] }}>
-        <Suspense fallback={null}>
-          <Stars />
-        </Suspense>
+      {loadingStatus && (
+        <Canvas camera={{ position: [0, 0, 1] }}>
+          <Suspense fallback={null}>
+            <Stars />
+          </Suspense>
 
-        <Preload all />
-      </Canvas>
+          <Preload all />
+        </Canvas>
+      )}
     </div>
   );
 };

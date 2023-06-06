@@ -16,13 +16,15 @@ import {
   netlify,
   heroku,
   firebase,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  started,
+  intern,
+  taught,
+  win,
+  ibsywlc,
+  devoutlooks,
+  textutils,
+  todolist,
+  tilegame,
   threejs,
 } from "../assets";
 
@@ -74,43 +76,43 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
+    name: "html5",
     icon: html,
   },
   {
-    name: "CSS 3",
+    name: "css3",
     icon: css,
   },
   {
-    name: "JavaScript",
+    name: "javascript",
     icon: javascript,
   },
   {
-    name: "JQuery",
+    name: "jquery",
     icon: jquery,
   },
   {
-    name: "React JS",
+    name: "reactjs",
     icon: reactjs,
   },
   {
-    name: "Tailwind CSS",
+    name: "tailwindcss",
     icon: tailwind,
   },
   {
-    name: "Node JS",
+    name: "nodejs",
     icon: nodejs,
   },
   {
-    name: "MongoDB",
+    name: "mongodb",
     icon: mongodb,
   },
   {
-    name: "Firebase",
+    name: "firebase",
     icon: firebase,
   },
   {
-    name: "Three JS",
+    name: "threejs",
     icon: threejs,
   },
   {
@@ -122,66 +124,57 @@ const technologies = [
     icon: figma,
   },
   {
-    name: "Netlify",
+    name: "netlify",
     icon: netlify,
   },
   {
-    name: "Heroku",
+    name: "heroku",
     icon: heroku,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Journey Started",
+    company_name: "For Web Development",
+    icon: started,
+    iconBg: "#1d1836",
+    date: "February 2020",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "I started my Web Development journey with HTML, CSS & JavaScript.",
+      "Then I learned a framework i.e. ReactJS.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Selfcare Apparels Intern",
+    company_name: "Internship",
+    icon: intern,
+    iconBg: "#1d1836",
+    date: "November 2021 - March 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "I was led to update the official website of the company on the daily basis.",
+      "I used to co-ordinate between my manager and a senior website developer to update the website.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "Taught Students",
+    company_name: "Online & Offline",
+    icon: taught,
+    iconBg: "#1d1836",
+    date: "2022 - 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "I taught Web Development, and App Development to over 100+ students online.",
+      "Also taught about Web Development to more than 60+ students offline.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "Winner at HACKATHON",
+    company_name: "TECHNOTHON",
+    icon: win,
+    iconBg: "#1d1836",
+    date: "April 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Me and my team won a hackathon i.e. 'TECHNOTHON' which was conducted by VES Polytechnic.",
     ],
   },
 ];
@@ -215,67 +208,117 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "IBSYWLC ",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "I developed IBSYWLC website which is a website which was made for an event named 'IBSYWLC' conducted by IEEE Bombay Section's Student Activities Committee.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "firebase",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "nodejs",
         color: "pink-text-gradient",
       },
+      {
+        name: "expressjs",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "text-[#ffd500]",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: ibsywlc,
+    source_live_link: "https://ieeebombay.org/ibsywlc23/",
   },
   {
-    name: "Job IT",
+    name: "Dev Outlooks",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Dev Outlooks is a community where I teach Web Development and App Development for free for the students who are very motivated to learn web development.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "firebase",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "nodejs",
         color: "pink-text-gradient",
       },
+      {
+        name: "bootstrap",
+        color: "orange-text-gradient",
+      },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: devoutlooks,
+    source_live_link: "https://devoutlook.netlify.app/",
   },
   {
-    name: "Trip Guide",
+    name: "TextUtils",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "TextUtils is a tool which is used to play with texts. This tool helps us to capitalize letters, change the sentence to lowercase, remove extra space, and count the letter and words used in the sentence.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
+    ],
+    image: textutils,
+    source_live_link: "https://hetref.github.io/textutils/",
+  },
+  {
+    name: "Todo List",
+    description:
+      "It is a tool which helps us to add todo list for a day with the saved todo's for a specific user.",
+    tags: [
       {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "html",
+        color: "blue-text-gradient",
       },
       {
         name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "firebase",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: todolist,
+    source_live_link: "https://hetref.github.io/yourtodo/",
+  },
+  {
+    name: "Tile Game",
+    description:
+      "Tile Game is a game which was was developed for fun purpose, and to strenthen my JavaScript skills, which is purely created JavaScript.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tilegame,
+    source_live_link: "https://hetref.github.io/tilesgame/",
   },
 ];
 

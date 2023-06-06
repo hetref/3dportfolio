@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
@@ -6,7 +6,6 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-import Earth from "./canvas/Earth";
 
 const Contact = () => {
   const formRef = useRef();
@@ -16,6 +15,13 @@ const Contact = () => {
     message: "",
   });
   const [loading, setLoading] = useState(false);
+  const [loadingStatus, setLoadingStatus] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoadingStatus(true);
+    }, 2000);
+  });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -120,9 +126,9 @@ const Contact = () => {
 
         <motion.div
           variants={slideIn("right", "tween", 0.2, 1)}
-          className="xl:flex-1 xl:h-auto md:h-[550px] h- [350px]"
+          className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
         >
-          <EarthCanvas />
+          {loadingStatus && <EarthCanvas />}
         </motion.div>
       </div>
     </div>
