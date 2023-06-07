@@ -5,8 +5,6 @@ import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-import { html } from "../assets";
-import { BallCanvas } from "./canvas";
 
 const ServiceCard = ({ index, title, icon }) => (
   <div className="xs:w-[250px] w-full servicecard cursor-pointer">
@@ -37,13 +35,6 @@ const ServiceCard = ({ index, title, icon }) => (
 );
 
 const About = () => {
-  const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(true);
-    }, 500);
-  });
   return (
     <div id="about">
       <div className="h-[80px]" />
@@ -51,12 +42,6 @@ const About = () => {
         <p className={styles.sectionSubText}>Who am I?</p>
         <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
-
-      {loading && (
-        <div className="w-28 h-28" style={{ display: "none" }} key="html-key">
-          <BallCanvas icon={html} />
-        </div>
-      )}
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
