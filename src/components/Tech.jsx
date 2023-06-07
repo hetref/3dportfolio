@@ -9,7 +9,7 @@ const Tech = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(true);
-    }, 1000);
+    }, 2000);
   });
 
   return (

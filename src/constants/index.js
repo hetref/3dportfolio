@@ -177,6 +177,16 @@ const experiences = [
       "Me and my team won a hackathon i.e. 'TECHNOTHON' which was conducted by VES Polytechnic.",
     ],
   },
+  {
+    title: "Winner at Joint SB Contest",
+    company_name: "SMELT 4.1",
+    icon: win,
+    iconBg: "#1d1836",
+    date: "May 2023",
+    points: [
+      "My team won a Joint SB Contest i.e. 'SMELT 4.1' in which 2 IEEE SB's came together and proposed an event for the betterment of students.",
+    ],
+  },
 ];
 
 const testimonials = [
