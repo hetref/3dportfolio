@@ -87,7 +87,7 @@ const Contact = () => {
                 value={form.name}
                 onChange={handleChange}
                 placeholder="What's your name?"
-                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none font-medium border-none"
+                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none font-medium border-2 border-[#ffffff99]"
               />
             </label>
 
@@ -99,7 +99,7 @@ const Contact = () => {
                 value={form.email}
                 onChange={handleChange}
                 placeholder="What's your email?"
-                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none font-medium border-none"
+                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none font-medium border-2 border-[#ffffff99]"
               />
             </label>
 
@@ -111,13 +111,13 @@ const Contact = () => {
                 value={form.message}
                 onChange={handleChange}
                 placeholder="What do you want to say?"
-                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none font-medium border-none resize-none"
+                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none font-medium border-2 border-[#ffffff99] resize-none"
               />
             </label>
 
             <button
               type="submit"
-              className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+              className="bg-tertiary py-3 px-8 outline-none border-2 border-[#ffffff99] w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
             >
               {loading ? "Sending ..." : "Send"}
             </button>
