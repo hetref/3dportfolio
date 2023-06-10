@@ -4,22 +4,22 @@ import { technologies } from "../constants";
 import { useEffect, useState } from "react";
 
 const Tech = () => {
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(true);
-    }, 1000);
-  });
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoading(true);
+  //   }, 1000);
+  // });
 
   return (
     <div className="flex flex-row flex-wrap justify-center gap-10">
-      {loading &&
-        technologies.map((technology) => (
-          <div className="w-28 h-28" key={technology.name}>
-            <BallCanvas icon={technology.icon} />
-          </div>
-        ))}
+      {/* {loading && */}
+      {technologies.map((technology) => (
+        <div className="w-28 h-28" key={technology.name}>
+          <BallCanvas icon={technology.icon} />
+        </div>
+      ))}
     </div>
   );
 };

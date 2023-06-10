@@ -30,24 +30,15 @@ const Stars = (props) => {
 };
 
 const StarsCanvas = () => {
-  const [loadingStatus, setLoadingStatus] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoadingStatus(true);
-    }, 2000);
-  });
   return (
     <div className="w-full h-auto absolute inset-0 z-[-1]">
-      {loadingStatus && (
-        <Canvas camera={{ position: [0, 0, 1] }}>
-          <Suspense fallback={null}>
-            <Stars />
-          </Suspense>
+      <Canvas camera={{ position: [0, 0, 1] }}>
+        <Suspense fallback={null}>
+          <Stars />
+        </Suspense>
 
-          <Preload all />
-        </Canvas>
-      )}
+        <Preload all />
+      </Canvas>
     </div>
   );
 };

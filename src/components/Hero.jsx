@@ -4,13 +4,13 @@ import { ComputersCanvas } from "./canvas";
 import { useEffect, useState } from "react";
 
 const Hero = () => {
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(true);
-    }, 3000);
-  });
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoading(true);
+  //   }, 3000);
+  // });
 
   return (
     <section className={`relative w-full h-screen mx-auto`}>
@@ -33,7 +33,9 @@ const Hero = () => {
         </div>
       </div>
 
-      {loading && <ComputersCanvas />}
+      {/* {loading &&  */}
+      <ComputersCanvas />
+      {/* } */}
 
       <div className="absolute xs:bottom-100 bottom-10 w-full flex justify-center items-center">
         <a href="#about">
