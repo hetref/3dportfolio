@@ -14,8 +14,6 @@ import html from "./tech/html.png";
 import css from "./tech/css.png";
 import figma from "./tech/figma.png";
 import jquery from "./tech/jquery.png";
-import heroku from "./tech/heroku.png";
-import netlify from "./tech/netlify.png";
 import firebase from "./tech/firebase.png";
 import git from "./tech/git.png";
 import javascript from "./tech/javascript.png";
@@ -48,8 +46,6 @@ export {
   close,
   css,
   jquery,
-  netlify,
-  heroku,
   figma,
   firebase,
   git,

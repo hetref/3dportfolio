@@ -13,8 +13,6 @@ import {
   git,
   figma,
   jquery,
-  netlify,
-  heroku,
   firebase,
   started,
   intern,
@@ -118,14 +116,6 @@ const technologies = [
   {
     name: "figma",
     icon: figma,
-  },
-  {
-    name: "netlify",
-    icon: netlify,
-  },
-  {
-    name: "heroku",
-    icon: heroku,
   },
 ];
 
